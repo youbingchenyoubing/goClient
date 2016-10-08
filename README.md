@@ -6,13 +6,13 @@
 =====
 lib文件中主要包含了`command.go,attack.go,io.go,parseProtocol.go,csvoperation.go`
 
-`command.go`:主要是用来封装协议，大家可以根据自己的需求来封装要发给服务器的包 
-`attack.go`: 主要是用来创建TCP连接（通过协程模拟多个客户端）
-`io.go`: 是自己的协议需求的读取文件，所以将代码单独开来。
-`parseProtocol.go`：解析服务器发送过来的协议，当然如果是纯粹的攻击，可以不用解析。
-`csvoperation.go`： 记录攻击过程中，服务器回应的时间，以及一些状态，方便后期数据分析
++ `command.go`:主要是用来封装协议，大家可以根据自己的需求来封装要发给服务器的包 
++ `attack.go`: 主要是用来创建TCP连接（通过协程模拟多个客户端）
++ `io.go`: 是自己的协议需求的读取文件，所以将代码单独开来。
++ `parseProtocol.go`：解析服务器发送过来的协议，当然如果是纯粹的攻击，可以不用解析。
++ `csvoperation.go`： 记录攻击过程中，服务器回应的时间，以及一些状态，方便后期数据分析
 
-> 除了lib文件中的3个go源代码，还有`main.go,attack.go`两个代码，主要是用来解析命令参数和接入lib中的接口
+> 除了lib文件中5个go源代码，还有`main.go,attack.go`两个代码，主要是用来解析命令参数和接入lib中的接口
 
 
 使用方法：
